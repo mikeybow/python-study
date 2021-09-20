@@ -1,9 +1,9 @@
-good_credit = False
-bad_credit = True
+price = 1000000
+good_credit = True
+
 
 if good_credit:
-    print('You will need to make a down payment of 10%')
-elif bad_credit:
-    print("Sorry we won't be able to accept a down payment")
+    down_payment = 0.1 * price
 else:
-    print('You will need to make a down payment of 20%')
+    down_payment = 0.2 * price
+print(f"down_payment: ${down_payment}")
